@@ -1,1 +1,1 @@
-# Hangman-Game
+Welcome to the deadly game of fate — guess the word right, or watch your man getting executed. Each wrong letter tightens the rope, spinning a cruel game of Russian roulette with his life. Six mistakes are allowed. The gallows await. Will you save him, or let him hang to death ?
