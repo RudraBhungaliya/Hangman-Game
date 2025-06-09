@@ -1,0 +1,39 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0; 
+}
+
+.btn{
+  width : 100%;
+  border : 5px solid black;
+  aspect-ratio: 1 / 1;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background : none;
+  padding : .5rem;
+  font-weight : bold;
+  color : black;
+  cursor : pointer;
+}
+
+.btn:hover, .btn:focus{
+  background-color : lightskyblue;
+} 
+
+.btn:active{
+  background-color: aqua;
+  opacity : 100%;
+}
+
+.btn:inactive{
+  opacity : .7%;
+}
+
+.btn:hover:not(:disabled), .btn.focus:not(:disabled){
+  background-color: lightskyblue;
+}
+
+.btn:active(:enabled){
+  background-color: lightskyblue;
+}
