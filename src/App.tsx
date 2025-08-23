@@ -18,10 +18,16 @@ export default function App() {
   )
 
   const isLoser = incorrectLetters.length === 6
-  const isWinner = wordToGuess.split('').every((letter) =>
-    guessedLetters.includes(letter)
-  )
+  let flg = true;
+  for(let i = 0; i < wordToGuess.length; i++) {
+    if(!guessedLetters.includes(wordToGuess[i])) {
+      flg = false;
+      break;   
+    }
+  }
 
+  const isWinner = flg;
+  
   const addGuessedLetter = useCallback(
     (letter: string) => {
       if (guessedLetters.includes(letter) || isWinner || isLoser) return
